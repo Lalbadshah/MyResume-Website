@@ -1,3 +1,3 @@
 # MyResume-Website
-Using this repo to host my resume website :D 
-prateekbhatnagar.me
+Using this repo to host my resume website 
+prateekbhatnagar.dev
