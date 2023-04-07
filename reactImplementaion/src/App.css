@@ -1,0 +1,187 @@
+.App {
+  max-width: 728px;
+  margin: auto;
+  border-radius: 15%;
+}
+
+.App header {
+  background-color: #181717;
+  height: 10vh;
+  min-height: 50px;
+  color: white;
+  width: 100%;
+  max-width: 728px;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 99;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.App section {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 70vh;
+  background-color: rgb(40, 37, 53);
+
+
+}
+
+main {
+  padding: 10px;
+  height: 80vh;
+  margin: 10vh 0 10vh;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+}
+
+main::-webkit-scrollbar {
+  width: 0.25rem;
+}
+
+main::-webkit-scrollbar-track {
+  background: #1e1e24;
+}
+
+main::-webkit-scrollbar-thumb {
+  background: #6649b8;
+}
+
+form {
+  height: 9vh;
+  bottom: 0px;
+  width: 100%;
+  max-width: 728px;
+  display: flex;
+  font-size: 1.5rem;
+}
+
+form button {
+  font-size: 2rem;
+  background-color: rgb(56, 56, 143);
+}
+
+
+input {
+  line-height: 1.5;
+  width: 100%;
+  font-size: 1.5rem;
+  background: rgb(58, 58, 58);
+  color: white;
+  outline: none;
+  border: none;
+  padding: 0 10px;
+}
+
+button {
+  background-color: #282c34; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  font-size: 1.25rem;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+
+.sign-in {
+  color: #282c34;
+  background: white;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.App > ul, .App > li {
+  text-align: left;
+  list-style: none;
+}
+
+.App > p {
+  max-width: 500px;
+  margin-bottom: 12px;
+  line-height: 24px;
+  padding: 10px 20px;
+  border-radius: 25px;
+  position: relative;
+  color: white;
+  text-align: center;
+}
+
+.message {
+  display: flex;
+  align-items: center;
+  border-radius: 6%;
+}
+
+
+.interviewer {
+  flex-direction: row-reverse;
+}
+
+.interviewer p {
+  color: white;
+  background: #0b93f6;
+  align-self: flex-end;
+
+}
+.AI p {
+  color: black;
+  background: #e5e5ea;
+
+}
+
+.message-content{
+  border-radius: 30px;
+  margin: 5px;
+}
+
+.AI .message-content {
+  margin-bottom: 10px;
+  padding: 10px;
+  background: #e5e5ea;
+  max-width: 55vh;
+}
+
+.interviewer .message-content {
+  margin-bottom: 10px;
+  margin-right: 5px;
+  padding: 10px;
+  background: #0b93f6;
+}
+
+@property --angle {
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
+}
+
+@keyframes rotate {
+  to {
+    --angle: 360deg;
+  }
+}
+
+.prompt-submission-box.thinking{
+  border: 0.5rem solid;
+  --angle: 0deg;
+  border-image: repeating-linear-gradient(var(--angle), #12c2e9, #c471ed, #f64f59,#12c2e9) 1;
+  animation: 10s rotate linear infinite;
+  overflow-y: auto;
+}
+
+.messages-container{
+  flex-grow: 1;
+  overflow-y: auto;
+  font-size: 1.25rem;
+}

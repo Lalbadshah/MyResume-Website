@@ -661,7 +661,7 @@ h4 {
     text-align: center
 }
 
-#map-canvas, .input-style input, .submit-result, .text-style textarea {
+.input-style input, .submit-result, .text-style textarea {
     width: 100%
 }
 
@@ -711,10 +711,6 @@ textarea {
 
 #error {
     color: red
-}
-
-.google-maps {
-    padding: 0
 }
 
 #map-canvas {
